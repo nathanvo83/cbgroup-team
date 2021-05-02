@@ -1,13 +1,8 @@
 import "./App.css";
+import UnderContruction from "./views/UnderContruction/UnderContruction";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>CBGROUP.CO.NZ</p>
-      </header>
-    </div>
-  );
+  return <UnderContruction></UnderContruction>;
 }
 
 export default App;
