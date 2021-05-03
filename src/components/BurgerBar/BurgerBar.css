@@ -1,0 +1,50 @@
+.burgerbar {
+  min-width: 100vw;
+  background-color: #313131;
+  color: aliceblue;
+}
+
+.burgerbar-header {
+  text-transform: uppercase;
+  padding: 5pt 0pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.burgerbar-header .text {
+  padding-left: 5pt;
+  font-size: 25pt;
+}
+
+.burgerbar-header .icon {
+  padding-right: 5pt;
+}
+
+.burgerbar-link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.burgerbar-item {
+  text-transform: uppercase;
+  padding: 5pt 0pt;
+  border-bottom: 1pt solid tomato;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.burgerbar-item .text {
+  padding-left: 5pt;
+}
+
+.burgerbar-item .icon {
+  padding-right: 10pt;
+}
+
+.burgerbar-subitem {
+  text-transform: uppercase;
+  padding: 5pt 5pt 5pt 20pt;
+  border-bottom: 1pt solid tomato;
+}
