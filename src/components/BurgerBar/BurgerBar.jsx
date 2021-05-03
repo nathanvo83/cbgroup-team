@@ -1,10 +1,9 @@
-import { useState } from "react";
 import "./BurgerBar.css";
+import "@animated-burgers/burger-slip/dist/styles.css";
+import { useState } from "react";
 import BurgerItem from "./BurgerItem";
 import { menuData } from "../../data/menu";
 import Burger from "@animated-burgers/burger-slip";
-import "@animated-burgers/burger-slip/dist/styles.css";
-// import BurgerSubItem from "./BurgerSubItem";
 
 function BurgerBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +15,7 @@ function BurgerBar() {
   const renderIcon = () => {
     return (
       <div className="burgerbar-header">
-        <div className="text">CBGROUP</div>
+        <div className="text">cbgroup</div>
         <div className="icon">
           <Burger isOpen={isOpen} onClick={() => isOpenHandler()}></Burger>
         </div>
@@ -32,6 +31,7 @@ function BurgerBar() {
           text={item.text}
           link={item.link}
           subs={item.subs}
+          menuHandler={() => isOpenHandler()}
         ></BurgerItem>
       );
     });

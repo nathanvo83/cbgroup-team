@@ -3,11 +3,14 @@ import BurgerSubItem from "./BurgerSubItem";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const BurgerItem = ({ text, link, subs }) => {
+const BurgerItem = ({ text, link, subs, menuHandler }) => {
   console.log("subs", subs);
   const [isOpen, setIsOpen] = useState(false);
 
   const isOpenHandler = () => {
+    if (subs === undefined) {
+      menuHandler();
+    }
     setIsOpen(!isOpen);
   };
 
@@ -18,13 +21,14 @@ const BurgerItem = ({ text, link, subs }) => {
             key={subItem.text}
             text={subItem.text}
             link={subItem.link}
+            menuHandler={menuHandler}
           ></BurgerSubItem>
         ))
       : "";
   };
 
-  const renderItem = (text, link) => {
-    return link === "" ? (
+  const renderItem = (text, link, hasSubItem) => {
+    return !hasSubItem ? (
       <Link className="burgerbar-link">
         <div className="burgerbar-item" onClick={() => isOpenHandler()}>
           <div className="text">{text}</div>
@@ -63,7 +67,7 @@ const BurgerItem = ({ text, link, subs }) => {
 
   return (
     <div>
-      {renderItem(text, link)}
+      {renderItem(text, link, subs === undefined)}
       {renderSubItem(subs)}
     </div>
   );

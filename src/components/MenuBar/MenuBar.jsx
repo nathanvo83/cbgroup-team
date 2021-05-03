@@ -1,18 +1,21 @@
 import React from "react";
-import * as ROUTES from "../../constants/routes";
-import { NavLink } from "react-router-dom";
-
+import BurgerBar from "../BurgerBar/BurgerBar";
+import NavBar from "../NavBar/NavBar";
+import { Desktop, Mobile, Tablet } from "../Responsive/Reponsive";
 const MenuBar = () => {
   return (
     <div>
-      <NavLink to={ROUTES.HOME}>HOME</NavLink> /{" "}
-      <NavLink to={ROUTES.ABOUTUS}>ABOUT-US</NavLink> /{" "}
-      <NavLink to={ROUTES.SERVICES}>SERVICES</NavLink> /{" "}
-      <NavLink to={ROUTES.PROJECTS}>PROJECTS</NavLink> /{" "}
-      <NavLink to={ROUTES.TESTIMONIALS}>TESTIMONIAL</NavLink> /{" "}
-      <NavLink to={ROUTES.PARTNERS}>PARTNERS</NavLink> /{" "}
-      <NavLink to={ROUTES.CONTACTUS}>CONTACT-US</NavLink>
-      <hr />
+      <Mobile>
+        <BurgerBar></BurgerBar>
+      </Mobile>
+
+      <Tablet>
+        <BurgerBar></BurgerBar>
+      </Tablet>
+
+      <Desktop>
+        <NavBar></NavBar>
+      </Desktop>
     </div>
   );
 };
