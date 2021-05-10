@@ -28,20 +28,12 @@ const BurgerItem = ({ text, link, subs, menuHandler }) => {
   };
 
   const renderItem = (text, link, hasSubItem) => {
-    return !hasSubItem ? (
+    return hasSubItem ? (
       <Link className="burgerbar-link">
         <div className="burgerbar-item" onClick={() => isOpenHandler()}>
           <div className="text">{text}</div>
           <div className="icon">
-            {subs !== undefined ? (
-              isOpen ? (
-                <FaAngleDown />
-              ) : (
-                <FaAngleRight />
-              )
-            ) : (
-              ""
-            )}
+            {hasSubItem ? isOpen ? <FaAngleDown /> : <FaAngleRight /> : ""}
           </div>
         </div>
       </Link>
@@ -50,15 +42,7 @@ const BurgerItem = ({ text, link, subs, menuHandler }) => {
         <div className="burgerbar-item" onClick={() => isOpenHandler()}>
           <div className="text">{text}</div>
           <div className="icon">
-            {subs !== undefined ? (
-              isOpen ? (
-                <FaAngleDown />
-              ) : (
-                <FaAngleRight />
-              )
-            ) : (
-              ""
-            )}
+            {hasSubItem ? isOpen ? <FaAngleDown /> : <FaAngleRight /> : ""}
           </div>
         </div>
       </Link>
@@ -67,7 +51,7 @@ const BurgerItem = ({ text, link, subs, menuHandler }) => {
 
   return (
     <div>
-      {renderItem(text, link, subs === undefined)}
+      {renderItem(text, link, subs !== undefined)}
       {renderSubItem(subs)}
     </div>
   );

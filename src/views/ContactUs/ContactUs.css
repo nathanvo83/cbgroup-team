@@ -1,0 +1,60 @@
+.contact-us {
+  text-align: left;
+}
+
+.contact-us .header {
+  color: var(--main-header-color);
+  margin: 70px 0px 40px 15px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bolder;
+  /* padding: 0px 5px 0px 15px; */
+}
+
+.contact-us .email {
+  color: #525456;
+}
+
+.contact-us .phone {
+  color: #525456;
+}
+
+.contact-us .address {
+  margin: 5px 0px 0px 0px;
+
+  color: var(--main-icon-color);
+}
+
+.contact-us .address:first-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.contact-us .icon {
+  font-size: 20px;
+  color: var(--main-icon-color);
+  padding: 0px 5px 0px 15px;
+}
+
+.contact-us .row {
+  margin: 5px 0px 0px 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: initial;
+}
+
+.contact-us .col-1 {
+  width: 100%;
+  display: flex;
+}
+
+.contact-us .col-2 {
+  width: 50%;
+  display: flex;
+}
+
+.contact-us .button-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}

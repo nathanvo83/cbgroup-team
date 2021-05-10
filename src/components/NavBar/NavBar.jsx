@@ -1,18 +1,18 @@
+import "./NavBar.css";
 import React from "react";
-import * as ROUTES from "../../constants/routes";
-import { NavLink } from "react-router-dom";
+import { menuData } from "../../data/menu";
+import NavItem from "./NavItem";
 
 const NavBar = () => {
+  const renderMenu = () =>
+    menuData.map((item) => (
+      <NavItem text={item.text} link={item.link} subs={item.subs}></NavItem>
+    ));
+
   return (
-    <div>
-      <NavLink to={ROUTES.HOME}>HOME</NavLink> /{" "}
-      <NavLink to={ROUTES.ABOUTUS}>ABOUT-US</NavLink> /{" "}
-      <NavLink to={ROUTES.SERVICES}>SERVICES</NavLink> /{" "}
-      <NavLink to={ROUTES.PROJECTS}>PROJECTS</NavLink> /{" "}
-      <NavLink to={ROUTES.TESTIMONIALS}>TESTIMONIAL</NavLink> /{" "}
-      <NavLink to={ROUTES.PARTNERS}>PARTNERS</NavLink> /{" "}
-      <NavLink to={ROUTES.CONTACTUS}>CONTACT-US</NavLink>
-      <hr />
+    <div className="navbar">
+      <div className="navbar-content">{renderMenu()}</div>
+      <div className="navbar-border-bottom"> </div>
     </div>
   );
 };

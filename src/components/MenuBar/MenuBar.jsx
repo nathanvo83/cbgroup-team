@@ -1,21 +1,33 @@
 import React from "react";
-import BurgerBar from "../BurgerBar/BurgerBar";
+// import BurgerBar from "../BurgerBar/BurgerBar";
+// import MobileBar from "../MobileBar/MobileBar";
+import MobileBarL2R from "../MobileBar/MobileBarL2R";
+// import MobileBarNoEffect from "../MobileBar/MobileBarNoEffect";
+// import MobileBarR2L from "../MobileBar/MobileBarR2L";
 import NavBar from "../NavBar/NavBar";
 import { Desktop, Mobile, Tablet } from "../Responsive/Reponsive";
 const MenuBar = () => {
   return (
     <div>
       <Mobile>
-        <BurgerBar></BurgerBar>
+        <MobileBarL2R></MobileBarL2R>
+        {/* <MobileBarR2L></MobileBarR2L> */}
+        {/* <MobileBarNoEffect></MobileBarNoEffect> */}
+        {/* <MobileBar></MobileBar> */}
+        {/* <BurgerBar></BurgerBar> */}
       </Mobile>
 
       <Tablet>
-        <BurgerBar></BurgerBar>
+        <MobileBarL2R></MobileBarL2R>
+
+        {/* <MobileBar></MobileBar> */}
+        {/* <BurgerBar></BurgerBar> */}
       </Tablet>
 
       <Desktop>
         <NavBar></NavBar>
       </Desktop>
+      {/* <NavBar></NavBar> */}
     </div>
   );
 };

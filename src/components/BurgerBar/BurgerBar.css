@@ -1,50 +1,64 @@
 .burgerbar {
   min-width: 100vw;
-  background-color: #313131;
-  color: aliceblue;
+  background: var(--main-menu-bg-color);
+  color: var(--main-menu-text-color);
+  transition: height 4s;
+}
+
+.burgerbar-open {
+  /* width: 100vw; */
+  /* min-height: 100vh; */
+  /* position: absolute; */
+  /* min-height: 100vh; */
+}
+
+.burgerbar-close {
+  /* min-height: auto; */
 }
 
 .burgerbar-header {
   text-transform: uppercase;
-  padding: 5pt 0pt;
+  padding: 10px 0px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 3px solid var(--main-menu-line-color);
 }
 
 .burgerbar-header .text {
-  padding-left: 5pt;
-  font-size: 25pt;
+  padding-left: 10px;
+  font-size: 25px;
 }
 
 .burgerbar-header .icon {
-  padding-right: 10pt;
+  padding-right: 15px;
 }
 
 .burgerbar-link {
-  color: aliceblue;
+  color: var(--main-menu-text-color);
   text-decoration: none;
 }
 
 .burgerbar-item {
   text-transform: uppercase;
-  padding: 5pt 0pt;
-  border-bottom: 1pt solid tomato;
+  padding: 15px 0px;
+  border-bottom: 1px solid var(--main-menu-line-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .burgerbar-item .text {
-  padding-left: 5pt;
+  padding-left: 10px;
 }
 
 .burgerbar-item .icon {
-  padding-right: 10pt;
+  padding-right: 15px;
 }
 
 .burgerbar-subitem {
   text-transform: uppercase;
-  padding: 5pt 5pt 5pt 20pt;
-  border-bottom: 1pt solid tomato;
+  padding: 15px 10px 15px 25px;
+  border-bottom: 1px solid var(--main-menu-line-color);
 }

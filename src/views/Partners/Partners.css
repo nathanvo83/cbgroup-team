@@ -1,0 +1,31 @@
+.partners {
+  text-align: left;
+  /* background: brown; */
+}
+
+.partners .partners-content {
+  /*  */
+}
+
+.partners-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  /* background: orange; */
+  text-align: center;
+}
+
+.partners-content .item {
+  padding: 50px;
+  /* border: 1px dashed #000; */
+  margin: auto;
+}
+
+.partners-content .img-item {
+  max-width: 100%;
+  /* margin: 20px; */
+  /* border: 1px dashed #000; */
+}
+
+.test {
+  background: greenyellow;
+}

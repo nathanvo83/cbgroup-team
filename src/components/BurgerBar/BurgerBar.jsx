@@ -38,12 +38,12 @@ function BurgerBar() {
 
   const renderMenu = () => {
     return isOpen ? (
-      <div className="burgerbar">
+      <div className="burgerbar burgerbar-open">
         {renderIcon()}
         {renderItem()}
       </div>
     ) : (
-      <div className="burgerbar">{renderIcon()}</div>
+      <div className="burgerbar burgerbar-close">{renderIcon()}</div>
     );
   };
 
