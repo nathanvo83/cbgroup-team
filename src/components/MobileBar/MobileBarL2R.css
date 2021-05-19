@@ -1,6 +1,6 @@
 .mobilebar {
   background: var(--main-menu-bg-color);
-  color: #fff;
+  color: var(--main-menu-text-color);
 }
 
 .mobilebar-header {
@@ -88,4 +88,8 @@
 .mobilebar-link {
   color: var(--main-menu-text-color);
   text-decoration: none;
+}
+
+.mobilebar-header-text {
+  /* background: red; */
 }

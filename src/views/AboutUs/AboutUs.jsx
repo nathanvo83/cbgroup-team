@@ -21,25 +21,22 @@ function AboutUs() {
         <div className="about-us-subtitle">
           LBP (Licensed Building Practitioner)
         </div>
-        <br />
 
         <div className="about-us-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat
           aperiam architecto aspernatur eius obcaecati deserunt blanditiis, hic
           expedita velit nihil. Eius illo omnis error quod voluptatum, quam
           dignissimos cumque.
-        </div>
-        <div className="about-us-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          dolorem totam ab fugit omnis eius ducimus saepe eos laborum rerum amet
-          corporis delectus pariatur quo hic possimus suscipit, quasi
-          repudiandae.
-        </div>
-        <div className="about-us-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quidem
-          maxime pariatur quia incidunt. Veniam temporibus, nemo tenetur
-          laboriosam soluta id fugit libero iusto corporis aliquam omnis animi
-          sequi quaerat.
+          <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          praesentium possimus at voluptatum obcaecati repellendus magni
+          provident optio impedit ipsam repudiandae quo vitae magnam, adipisci
+          dolore nihil recusandae, ratione consectetur.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          iure itaque in, perferendis molestiae ullam laboriosam. Voluptatem
+          dolor cupiditate ullam reiciendis tempore voluptatibus delectus, aut
+          debitis porro praesentium eos harum?
         </div>
       </div>
     );
@@ -56,10 +53,12 @@ function AboutUs() {
           <div className="about-us-subtitle">
             LBP (Licensed Building Practitioner)
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga.
-          Consequatur rerum quis tempore nemo magnam molestiae placeat,
-          temporibus ducimus nulla ipsam nostrum alias dicta repellat velit
-          minus minima repellendus.
+          <div className="about-us-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga.
+            Consequatur rerum quis tempore nemo magnam molestiae placeat,
+            temporibus ducimus nulla ipsam nostrum alias dicta repellat velit
+            minus minima repellendus.
+          </div>
         </div>
       </div>
     );
@@ -76,10 +75,12 @@ function AboutUs() {
           <div className="about-us-subtitle">
             LBP (Licensed Building Practitioner)
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga.
-          Consequatur rerum quis tempore nemo magnam molestiae placeat,
-          temporibus ducimus nulla ipsam nostrum alias dicta repellat velit
-          minus minima repellendus.
+          <div className="about-us-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+            voluptates sapiente animi modi odio, alias quaerat dolorum autem
+            nostrum doloremque exercitationem ipsa, esse voluptas voluptatem et
+            repellendus iure, ab recusandae!
+          </div>
         </div>
       </div>
     );
@@ -96,10 +97,12 @@ function AboutUs() {
           <div className="about-us-subtitle">
             LBP (Licensed Building Practitioner)
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga.
-          Consequatur rerum quis tempore nemo magnam molestiae placeat,
-          temporibus ducimus nulla ipsam nostrum alias dicta repellat velit
-          minus minima repellendus.
+          <div className="about-us-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            rem expedita quam possimus doloremque eius quaerat qui nesciunt
+            recusandae. Sint exercitationem quis quisquam eaque! Aperiam odit
+            laboriosam illum rerum delectus?
+          </div>
         </div>
       </div>
     );
@@ -107,7 +110,7 @@ function AboutUs() {
 
   return (
     <div className="about-us">
-      <div className="header">About Us</div>
+      <div className="page-header">About Us</div>
       <div className="about-us-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias
         eaque, ad dolore veniam provident. Itaque vel vitae corrupti. Aliquam
@@ -129,35 +132,39 @@ function AboutUs() {
         temporibus voluptatum?
       </div>
 
-      <div className="header">Our team</div>
+      <div className="page-header">Our team</div>
       <div className="about-us-content">
         <Desktop>
-          <div className="content-row">
-            <div className="w1-3">{renderItem01()}</div>
-            <div className="w2-3">{renderItem02()}</div>
-            <div className="w1-3">{renderItem03()}</div>
-            <div className="w1-3">{renderItem04()}</div>
-            <div className="w1-3">{renderItem05()}</div>
+          <div className="grid3">
+            <div className="col-w1">{renderItem01()}</div>
+            <div className="col-w2">{renderItem02()}</div>
+          </div>
+          <div className="grid3">
+            <div className="col-w1">{renderItem03()}</div>
+            <div className="col-w1">{renderItem04()}</div>
+            <div className="col-w1">{renderItem05()}</div>
           </div>
         </Desktop>
 
         <Tablet>
-          <div className="content-row">
-            <div className="w1-1">{renderItem01()}</div>
-            <div className="w1-1">{renderItem02()}</div>
-            <div className="w1-2">{renderItem03()}</div>
-            <div className="w1-2">{renderItem04()}</div>
-            <div className="w1-2">{renderItem05()}</div>
+          <div className="grid1">
+            <div className="col-w1">{renderItem01()}</div>
+            <div className="col-w1">{renderItem02()}</div>
+          </div>
+          <div className="grid2">
+            <div className="col-w1">{renderItem03()}</div>
+            <div className="col-w1">{renderItem04()}</div>
+            <div className="col-w1">{renderItem05()}</div>
           </div>
         </Tablet>
 
         <Mobile>
-          <div className="content-row">
-            <div className="w1-1">{renderItem01()}</div>
-            <div className="w1-1">{renderItem02()}</div>
-            <div className="w1-1">{renderItem03()}</div>
-            <div className="w1-1">{renderItem04()}</div>
-            <div className="w1-1">{renderItem05()}</div>
+          <div className="grid1">
+            <div className="col-w1">{renderItem01()}</div>
+            <div className="col-w1">{renderItem02()}</div>
+            <div className="col-w1">{renderItem03()}</div>
+            <div className="col-w1">{renderItem04()}</div>
+            <div className="col-w1">{renderItem05()}</div>
           </div>
         </Mobile>
       </div>

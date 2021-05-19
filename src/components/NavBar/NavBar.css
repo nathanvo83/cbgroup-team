@@ -42,6 +42,8 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  color: var(--main-menu-text-color);
+  font-family: "Cairo";
 }
 
 .navbar-item .item .text {
@@ -56,6 +58,7 @@
 
 .navbar-item:hover .item {
   background: var(--main-menu-item-hover-color);
+  /* color: var(--main-menu-text-hover-color); */
 }
 
 .navbar-item:hover .item .text {
@@ -71,6 +74,7 @@
 
 .navbar-item:hover .content {
   /*  */
+  z-index: 999;
   display: block;
 }
 
@@ -88,4 +92,5 @@
 
 .navbar-item .content .subitem:hover {
   background: var(--main-menu-item-hover-color);
+  /* color: var(--main-menu-text-hover-color); */
 }

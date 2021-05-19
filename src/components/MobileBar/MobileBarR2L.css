@@ -1,6 +1,6 @@
 .mobilebar {
   background: var(--main-menu-bg-color);
-  color: #fff;
+  color: var(--main-menu-text-color);
 }
 
 .mobilebar-header {

@@ -1,0 +1,25 @@
+.slogan {
+  /* background: var(--main-note-bg-color); */
+  padding: 20px;
+  margin: 50px 0px;
+}
+
+.slogan .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.slogan .text {
+  text-align: center;
+  /* background: palegreen; */
+}
+
+.slogan .button {
+  margin: auto;
+  /* background: red;
+  padding: 10px; */
+  text-align: center;
+}

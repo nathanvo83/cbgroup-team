@@ -7,8 +7,29 @@ const Testimonials = () => {
   const renderItem = () => {
     return (
       <div className="testimonials-item">
-        <div className="content">
+        <div className="header">
           <div className="icon">
+            <FaQuoteLeft />
+          </div>
+          <div className="star">
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+        </div>
+
+        <div className="content">
+          <div className="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+            laudantium, accusamus saepe aspernatur error repellendus.
+            Blanditiis, recusandae, laboriosam sapiente aliquid repellendus, quo
+            reprehenderit perspiciatis iste omnis culpa adipisci exercitationem
+            facere!
+          </div>
+          <br />
+          {/* <div className="icon">
             <FaQuoteLeft />
           </div>
           <div>
@@ -28,7 +49,7 @@ const Testimonials = () => {
               exercitationem facere!
             </div>
             <br />
-          </div>
+          </div> */}
         </div>
 
         <div className="footer">
@@ -41,7 +62,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      <div className="header">testimonials</div>
+      <div className="page-header">testimonials</div>
       <Mobile>
         <div className="testimonials-content mobile">
           {renderItem()}

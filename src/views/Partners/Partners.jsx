@@ -7,37 +7,70 @@ import engeo from "../../assets/images/Partners/engeo.png";
 import { Desktop, Mobile, Tablet } from "../../components/Responsive/Reponsive";
 
 function Partners() {
+  const renderCol1 = () => {
+    return (
+      <div>
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img className="image" src={engeo} alt="engeo" />
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+      </div>
+    );
+  };
+
+  const renderCol2 = () => {
+    return (
+      <div>
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img className="image" src={engeo} alt="engeo" />
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+      </div>
+    );
+  };
+
+  const renderCol3 = () => {
+    return (
+      <div>
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img className="image" src={engeo} alt="engeo" />
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+      </div>
+    );
+  };
+
+  const renderCol4 = () => {
+    return (
+      <div>
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img className="image" src={engeo} alt="engeo" />
+        <img className="image" src={carternz} alt="carternz" />
+        <img className="image" src={nzcb} alt="nzcb" />
+        <img className="image" src={placemarkers} alt="placemarkers" />
+      </div>
+    );
+  };
+
   const renderMobile = () => {
     return (
       <div className="partners-content">
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={nzcb} alt="nzcb" />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={placemarkers} alt="placemarkers" />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={carternz} alt="carternz" />
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={engeo} alt="engeo" />
-            </div>
-          </div>
+        <div className="grid1">
+          <div className="col-w1">{renderCol1()}</div>
+          <div className="col-w1">{renderCol2()}</div>
+          <div className="col-w1">{renderCol3()}</div>
+          <div className="col-w1">{renderCol4()}</div>
         </div>
       </div>
     );
@@ -46,34 +79,11 @@ function Partners() {
   const renderTablet = () => {
     return (
       <div className="partners-content">
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={nzcb} alt="nzcb" />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={placemarkers} alt="placemarkers" />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={carternz} alt="carternz" />
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={engeo} alt="engeo" />
-            </div>
-          </div>
+        <div className="grid2">
+          <div className="col-w1">{renderCol1()}</div>
+          <div className="col-w1">{renderCol2()}</div>
+          <div className="col-w1">{renderCol3()}</div>
+          <div className="col-w1">{renderCol4()}</div>
         </div>
       </div>
     );
@@ -82,34 +92,19 @@ function Partners() {
   const renderDesktop = () => {
     return (
       <div className="partners-content">
-        <div className="row">
-          <div className="w1-3">
-            <div className="item">
-              <img className="img-item" src={nzcb} alt="nzcb" />
-            </div>
-          </div>
-          <div className="w2-3">
-            <div className="item">
-              <img className="img-item" src={placemarkers} alt="placemarkers" />
-            </div>
-            <div className="item">
-              <img className="img-item" src={carternz} alt="carternz" />
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="w1-1">
-            <div className="item">
-              <img className="img-item" src={engeo} alt="engeo" />
-            </div>
-          </div>
+        <div className="grid4">
+          <div className="col-w1">{renderCol1()}</div>
+          <div className="col-w1">{renderCol2()}</div>
+          <div className="col-w1">{renderCol3()}</div>
+          <div className="col-w1">{renderCol4()}</div>
         </div>
       </div>
     );
   };
+
   return (
     <div className="partners">
+      <div className="page-header">Partners</div>
       <Desktop>{renderDesktop()}</Desktop>
       <Tablet>{renderTablet()}</Tablet>
       <Mobile>{renderMobile()}</Mobile>

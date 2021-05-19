@@ -1,13 +1,42 @@
+@font-face {
+  font-family: "HelveticaNeueLTStd-HvEx";
+  src: local("HelveticaNeueLTStd-HvEx"),
+    url("./fonts/HelveticaNeueLTStd-HvEx/HelveticaNeueLTStd-HvEx.otf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaEF-Book";
+  src: local("FuturaEF-Book"),
+    url("./fonts/futura/FuturaEF-Book.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "AG_Futura";
+  src: local("AG_Futura"),
+    url("./fonts/futura/AG_Futura.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaEF-Light";
+  src: local("FuturaEF-Light"),
+    url("./fonts/futura/FuturaEF-Light.otf") format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
+
+/* "futura-bt", "HelveticaNeueLTStd-HvEx",  */

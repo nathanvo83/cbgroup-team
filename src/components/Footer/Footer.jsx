@@ -69,30 +69,32 @@ export const Footer = () => {
 
   const renderMobile = () => {
     return (
-      <div className="footer-content">
-        <div className="column-m">{renderCol01()}</div>
-        <div className="column-m">{renderCol02()}</div>
-        <div className="column-m">{renderCol03()}</div>
+      <div className="grid1 footer-content">
+        <div className="col-w1">{renderCol01()}</div>
+        <div className="col-w1">{renderCol02()}</div>
+        <div className="col-w1">{renderCol03()}</div>
       </div>
     );
   };
 
   const renderTablet = () => {
     return (
-      <div className="footer-content">
-        <div className="column-t">{renderCol01()}</div>
-        <div className="column-t">{renderCol02()}</div>
-        <div className="column-t">{renderCol03()}</div>
+      <div className="grid2 footer-content">
+        <div className="col-w1">
+          {renderCol01()}
+          {renderCol03()}
+        </div>
+        <div className="col-w1">{renderCol02()}</div>
       </div>
     );
   };
 
   const renderDesktop = () => {
     return (
-      <div className="footer-content">
-        <div className="column-d">{renderCol01()}</div>
-        <div className="column-d">{renderCol02()}</div>
-        <div className="column-d">{renderCol03()}</div>
+      <div className="grid3 footer-content">
+        <div className="col-w1">{renderCol01()}</div>
+        <div className="col-w1">{renderCol02()}</div>
+        <div className="col-w1">{renderCol03()}</div>
       </div>
     );
   };

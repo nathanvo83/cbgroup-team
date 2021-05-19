@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import "./fonts/HelveticaNeueLTStd-HvEx/HelveticaNeueLTStd-HvEx.otf";
+// import "./fonts/futura/AG_Futura.ttf";
+// import "./fonts/futura/FuturaEF-Book.otf";
+// import "./fonts/futura/FuturaEF-Light.otf";
 
 ReactDOM.render(
   <BrowserRouter>

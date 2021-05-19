@@ -1,14 +1,6 @@
 .about-us {
   /* background: yellow; */
-  padding: 0px 15px;
-}
-
-.about-us > .header {
-  color: var(--main-header-color);
-  margin: 70px 0px 40px 0px;
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: bolder;
+  /* padding: 0 10px 100px 10px; */
 }
 
 .about-us-text {
@@ -17,30 +9,25 @@
 }
 
 .about-us-title {
-  font-size: 20px;
-  font-weight: bold;
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
   margin-bottom: 10px;
 }
 
 .about-us-subtitle {
-  font-size: 17px;
-  font-weight: bold;
+  font-family: var(--main-subtitle-font);
+  font-size: var(--main-subtitle-size);
+  color: var(--main-subtitle-color);
   margin-bottom: 5px;
 }
 
 .about-us-content {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .about-us-content .content-column {
   display: flex;
   flex-direction: column;
-}
-
-.about-us-content .content-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .about-us-content .item-content {
