@@ -6,8 +6,8 @@ import React from "react";
 import "./Home.css";
 
 function Home() {
-  const requestText =
-    "UNDERSTAND WHAT GOES INTO A BUILDING PROJECT BEFORE YOU START";
+  // const requestText =
+  //   "UNDERSTAND WHAT GOES INTO A BUILDING PROJECT BEFORE YOU START";
 
   return (
     <div className="home">
