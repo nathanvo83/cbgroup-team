@@ -1,94 +1,40 @@
 .testimonials {
-  /* padding: 0 10px 100px 10px; */
+  /*  */
 }
 
-.testimonials-content {
-  display: grid;
-  column-gap: 30px;
-  row-gap: 50px;
-}
-
-.testimonials-item {
-  background: var(--main-bg-color);
-  color: #000;
-
+.testimonials .testimonial-item {
+  border: 1px solid var(--main-menu-line-color);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
 }
 
-.testimonials-item > .header {
-  display: flex;
-  justify-content: space-between;
-
-  /* display: grid;
-  grid-template-columns: auto auto; */
-  /* column-gap: 10px; */
-  align-items: center;
-
-  background: var(--main-bg-color);
-  padding: 20px 10px 0 10px;
+.testimonials .testimonial-icon {
+  color: var(--main-icon-color);
+  font-size: var(--main-header-size);
+  text-align: center;
 }
 
-.testimonials-item > .content {
-  /* display: flex;
-  justify-content: space-between;
-
-  align-items: initial;
-
-  background: var(--main-bg-color);
-  padding: 20px 10px 0 10px; */
-  padding: 0 10px;
-}
-
-.testimonials-item > .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10px;
-  color: var(--main-menu-text-color);
-  background: var(--main-menu-bg-color);
-}
-
-.testimonials-item .icon {
-  /* padding: 0 20px; */
-  font-size: 50px;
-  /* background: red; */
-}
-
-.testimonials-item .star {
+.testimonials .testimonial-start {
   color: var(--main-header-color);
-  margin-bottom: 10px;
+  text-align: center;
+  margin: 15px 0;
 }
 
-.testimonials-item .title {
-  font-size: 15px;
+.testimonials .testimonial-text {
+  /*  */
 }
 
-.testimonials-item .subtitle {
-  font-size: 15px;
-  color: var(--main-menu-item-hover-color);
+.testimonials .testimonial-author {
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.testimonials-item .image {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;
-  width: 100px;
-  background: #fff;
+.testimonials .testimonial-company {
+  font-family: var(--main-subtitle-font);
+  font-size: var(--main-subtitle-size);
+  color: var(--main-subtitle-color);
+  text-transform: uppercase;
+  text-align: center;
 }
-
-.testimonials-item .text {
-  color: #000;
-}
-
-.testimonials-content.desktop {
-  grid-template-columns: auto auto auto;
-}
-
-.testimonials-content.tablet {
-  grid-template-columns: auto auto;
-}
-
-.testimonials-content.mobile {
-  grid-template-columns: auto;
-}
-
-/* ADFF2F */

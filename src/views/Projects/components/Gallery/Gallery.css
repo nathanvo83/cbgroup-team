@@ -1,0 +1,14 @@
+.gallery {
+  margin: 50px 0;
+}
+
+.gallery .gallery-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.gallery .gallery-img {
+  text-align: center;
+  border: 1px dashed #000;
+}

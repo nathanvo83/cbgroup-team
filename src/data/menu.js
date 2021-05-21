@@ -8,7 +8,7 @@ export const menuData = [
     link: "",
     subs: [
       { text: "home renovations", link: ROUTES.SERVICE_HOME_REMOVATIONS },
-      { text: "interior & extorior", link: ROUTES.SERVICE_INTERIOR_EXTORIOR },
+      { text: "interior & exterior", link: ROUTES.SERVICE_INTERIOR_EXTERIOR },
       { text: "new builds", link: ROUTES.SERVICE_NEW_BUILDS },
     ],
   },

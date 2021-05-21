@@ -5,14 +5,14 @@ import Home from "./Home/Home";
 import AboutUs from "./AboutUs/AboutUs";
 
 import Services from "./Services/Services";
-import HomeRenovationsService from "./Services/HomeRenovationsService";
-import InteriorExtoriorService from "./Services/InteriorExtoriorService";
-import NewBuildService from "./Services/NewBuildsService";
+import HomeRenovationsService from "./Services/HomeRenovationsService/HomeRenovationsService";
+import InteriorExteriorService from "./Services/InteriorExteriorService/InteriorExteriorService";
+import NewBuildService from "./Services/NewBuildsService/NewBuildsService";
 
 import Projects from "./Projects/Projects";
-import QueenStreetProject from "./Projects/QueenStreetProject";
-import AlbanyProject from "./Projects/AlbanyProject";
-import MissionBayProject from "./Projects/MissionBayProject";
+import QueenStreetProject from "./Projects/QueenStreetProject/QueenStreetProject";
+import AlbanyProject from "./Projects/AlbanyProject/AlbanyProject";
+import MissionBayProject from "./Projects/MissionBayProject/MissionBayProject";
 
 import Testimonials from "./Testimonials/Testimonials";
 import Partners from "./Partners/Partners";
@@ -33,8 +33,8 @@ const Main = () => {
       <Route path={ROUTES.SERVICE_HOME_REMOVATIONS} exact>
         <HomeRenovationsService></HomeRenovationsService>
       </Route>
-      <Route path={ROUTES.SERVICE_INTERIOR_EXTORIOR} exact>
-        <InteriorExtoriorService></InteriorExtoriorService>
+      <Route path={ROUTES.SERVICE_INTERIOR_EXTERIOR} exact>
+        <InteriorExteriorService></InteriorExteriorService>
       </Route>
       <Route path={ROUTES.SERVICE_NEW_BUILDS} exact>
         <NewBuildService></NewBuildService>

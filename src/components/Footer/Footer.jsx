@@ -9,15 +9,15 @@ export const Footer = () => {
   const renderCol01 = () => {
     return (
       <div>
-        <div className="header">Our services</div>
-        <Link className="link" to={ROUTES.SERVICE_HOME_REMOVATIONS}>
-          <div className="text">Home Renovations</div>
+        <div className="footer-header">Our services</div>
+        <Link className="footer-link" to={ROUTES.SERVICE_HOME_REMOVATIONS}>
+          <div className="footer-text">Home Renovations</div>
         </Link>
-        <Link className="link" to={ROUTES.SERVICE_INTERIOR_EXTORIOR}>
-          <div className="text">Interior & Extorior</div>
+        <Link className="footer-link" to={ROUTES.SERVICE_INTERIOR_EXTERIOR}>
+          <div className="footer-text">Interior & Extorior</div>
         </Link>
-        <Link className="link" to={ROUTES.SERVICE_NEW_BUILDS}>
-          <div className="text">New builds</div>
+        <Link className="footer-link" to={ROUTES.SERVICE_NEW_BUILDS}>
+          <div className="footer-text">New builds</div>
         </Link>
       </div>
     );
@@ -26,21 +26,15 @@ export const Footer = () => {
   const renderCol02 = () => {
     return (
       <div>
-        <div className="header">Our projects</div>
-        <Link className="link" to={ROUTES.PROJECT_QUEENSTREET}>
-          <div className="text">Queue Street</div>
+        <div className="footer-header">Our projects</div>
+        <Link className="footer-link" to={ROUTES.PROJECT_QUEENSTREET}>
+          <div className="footer-text">Queue Street</div>
         </Link>
-        <Link className="link" to={ROUTES.PROJECT_ALBANY}>
-          <div className="text">Albany</div>
+        <Link className="footer-link" to={ROUTES.PROJECT_ALBANY}>
+          <div className="footer-text">Albany</div>
         </Link>
-        <Link className="link" to={ROUTES.PROJECT_MISSIONBAY}>
-          <div className="text">Mission Bay</div>
-        </Link>
-        <Link className="link">
-          <div className="text">Mouth Albert</div>
-        </Link>
-        <Link className="link">
-          <div className="text">Henderson</div>
+        <Link className="footer-link" to={ROUTES.PROJECT_MISSIONBAY}>
+          <div className="footer-text">Mission Bay</div>
         </Link>
       </div>
     );
@@ -49,17 +43,17 @@ export const Footer = () => {
   const renderCol03 = () => {
     return (
       <div>
-        <div className="header">Get in touch</div>
+        <div className="footer-header">Get in touch</div>
 
-        <a className="link" href="mailto:info@cbgroup.co.nz">
-          <div className="row">
-            <BiMailSend className="icon" />
+        <a className="footer-link" href="mailto:info@cbgroup.co.nz">
+          <div className="footer-row">
+            <BiMailSend className="footer-icon" />
             <div>info@cbgroup.co.nz</div>
           </div>
         </a>
-        <a className="link" href="tel:123456789">
-          <div className="row">
-            <BiPhoneCall className="icon" />
+        <a className="footer-link" href="tel:123456789">
+          <div className="footer-row">
+            <BiPhoneCall className="footer-icon" />
             <div>(+64)123456789</div>
           </div>
         </a>

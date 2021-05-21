@@ -1,0 +1,28 @@
+.samples {
+  margin: 50px 0;
+}
+
+.samples .sample-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.samples .sample-img {
+  text-align: center;
+  border: 1px dashed #000;
+}
+
+.samples .sample-title {
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.samples .sample-text {
+}
+
+.samples .sample-button {
+  text-align: center;
+}

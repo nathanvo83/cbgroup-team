@@ -10,7 +10,7 @@ export const PROJECT_MISSIONBAY = "/projects/mission-bay";
 
 export const SERVICES = "/services";
 export const SERVICE_HOME_REMOVATIONS = "/services/home-renovations";
-export const SERVICE_INTERIOR_EXTORIOR = "/services/interior-extorior";
+export const SERVICE_INTERIOR_EXTERIOR = "/services/interior-exterior";
 export const SERVICE_NEW_BUILDS = "/services/new-builds";
 
 export const TESTIMONIALS = "/testimonials";

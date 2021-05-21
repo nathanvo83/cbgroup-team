@@ -78,25 +78,31 @@
   --main-subtitle-size: 0.8rem;
   --main-subtitle-color: #9b9b9b;
 
-  --main-bg-color: #ffffff;
+  --main-bg-color: #f2f2f2;
   --main-text-color: #363636;
   --main-content-width: 1024px;
-  --main-menu-bg-color: #222428;
+  --main-menu-bg-color: #272727;
+  /* #222428; */
   --main-menu-text-color: #f2f2f2;
   --main-menu-text-hover-color: #f2f2f2;
-  --main-menu-line-color: #525456;
+  --main-menu-line-color: #5f5f5f;
+  /* #525456; */
   --main-menu-item-hover-color: #35c3c6;
-  --main-note-bg-color: #f9f9fb;
+  --main-note-bg-color: #f5f5f5;
+  /* #def2f1; */
+  /* #f5f5f5; */
+  /* #edf5e1; */
+  /* #f9f9fb; */
   /* #209aa3; */
 
   /* 2dd36f */
   --main-header-color: #35c3c6;
-  --main-button-color: #35c3c6;
-  --main-icon-color: #e19605;
+  --main-button-color: #272727;
+  --main-icon-color: #ff6b6b;
 
-  --main-footer-bg-color: #222428;
+  --main-footer-bg-color: #272727;
   --main-footer-text-color: #f2f2f2;
-  --main-footer-link-color: #525456;
+  --main-footer-link-color: #5f5f5f;
 }
 
 input[type="text"],
@@ -117,7 +123,7 @@ textarea {
 }
 
 input[type="button"] {
-  background: var(--main-menu-bg-color);
+  background: var(--main-button-color);
   color: var(--main-menu-text-color);
   /* background-color: var(--main-button-color); */
   /* color: white; */

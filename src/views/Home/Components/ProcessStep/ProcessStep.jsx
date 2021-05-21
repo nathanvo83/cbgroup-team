@@ -5,35 +5,60 @@ import {
   Mobile,
   Tablet,
 } from "../../../../components/Responsive/Reponsive";
+import { BiCheck } from "react-icons/bi";
 
 const ProcessStep = () => {
   const renderCol01 = () => {
     return (
       <div>
-        <div className="number">1.</div>
-        <div className="name">PREBUILD</div>
-        <div className="subtitle">
+        <div className="step-number">1.</div>
+        <div className="step-name">PREBUILD</div>
+        <div className="step-subtitle">
           LAYING THE FOUNDATIONS FOR A SUCCESSFUL BUILD
         </div>
         <div>Plan out your entire build to match budgets and time frame</div>
-        <div>+ Initial meeting</div>
-        <div>+ Working with the architect</div>
-        <div>+ Resource consents</div>
-        <div>+ Final budgets & reporting</div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Initial meeting</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          Working with the architect
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Resource consents</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Final budgets & reporting</div>
+        </div>
       </div>
     );
   };
   const renderCol02 = () => {
     return (
       <div>
-        <div className="number">2.</div>
-        <div className="name">CONSTRUCTION</div>
-        <div className="subtitle">MAKING YOUR PLANS INTO A REALITY</div>
+        <div className="step-number">2.</div>
+        <div className="step-name">CONSTRUCTION</div>
+        <div className="step-subtitle">MAKING YOUR PLANS INTO A REALITY</div>
         <div>Managing the build process to control budget and timeframe</div>
-        <div>+ Set construction timeline</div>
-        <div>+ Project, site and budget management</div>
-        <div>+ Keeping you informed of progress</div>
-        <div>+ Ensuring code of compliance is met</div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Set construction timeline</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Project, site and budget management</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Keeping you informed of progress</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Ensuring code of compliance is met</div>
+        </div>
       </div>
     );
   };
@@ -41,14 +66,26 @@ const ProcessStep = () => {
   const renderCol03 = () => {
     return (
       <div>
-        <div className="number">3.</div>
-        <div className="name">POST BUILD</div>
-        <div className="subtitle">WARRANTIES & MAINTENANCE</div>
+        <div className="step-number">3.</div>
+        <div className="step-name">POST BUILD</div>
+        <div className="step-subtitle">WARRANTIES & MAINTENANCE</div>
         <div>We don’t up and leave you once the builders are done</div>
-        <div>+ Guarantees and warranties</div>
-        <div>+ Customised maintenance schedule</div>
-        <div>+ Assistance maintaining your home</div>
-        <div>+ Always available when you need us</div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Guarantees and warranties</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Customised maintenance schedule</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Assistance maintaining your home</div>
+        </div>
+        <div className="step-row">
+          <BiCheck className="step-icon" />
+          <div>Always available when you need us</div>
+        </div>
       </div>
     );
   };

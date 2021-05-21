@@ -5,66 +5,35 @@ import {
   Mobile,
   Tablet,
 } from "../../../../components/Responsive/Reponsive";
+import { FaQuoteLeft } from "react-icons/fa";
 
 const Slogan = () => {
-  const renderCol01 = () => {
+  const renderContent = () => {
     return (
       <div>
-        <div className="text">
-          BUILDING OR RENOVATING YOUR HOME CAN BE A COMPLEX PROCESS, WITH CB
-          PROJECTS IT DOESN’T NEED TO BE
+        <div className="slogan-icon">
+          <FaQuoteLeft />
         </div>
-        <div className="text">
-          Too often people who build or renovate their home find it very complex
-          or stressful.
+        <div className="slogan-text">
+          Renovating your home is often described as a stressful and challenging
+          time. Nothing could be further from the truth based on our experience
+          with Cameron Bell and the team at CB Projects.
         </div>
-        <div className="text">
-          Certified Building Projects hasn’t had these responses. Our clients
-          across Auckland happily recommend us to others and even come back to
-          renovate or build their next homes with us as well.
-        </div>
-      </div>
-    );
-  };
-
-  const renderCol02 = () => {
-    return (
-      <div>
-        <div className="text">
-          “Renovating your home is often described as a stressful and
-          challenging time. Nothing could be further from the truth based on our
-          experience with Cameron Bell and the team at CB Projects.”
-        </div>
-        <div className="text">CHERIE AND ROHAN WHITAKER</div>
+        <div className="slogan-author">CHERIE AND ROHAN WHITAKER</div>
       </div>
     );
   };
 
   const renderDesktop = () => {
-    return (
-      <div className="grid2">
-        <div className="col-w1">{renderCol01()}</div>
-        <div className="col-w1">{renderCol02()}</div>
-      </div>
-    );
+    return <div>{renderContent()}</div>;
   };
 
   const renderTablet = () => {
-    return (
-      <div className="grid2">
-        <div className="col-w1">{renderCol01()}</div>
-        <div className="col-w1">{renderCol02()}</div>
-      </div>
-    );
+    return <div>{renderContent()}</div>;
   };
 
   const renderMobile = () => {
-    return (
-      <div className="grid1">
-        <div className="col-w1">{renderCol01()}</div>
-        <div className="col-w1">{renderCol02()}</div>
-      </div>
-    );
+    return <div>{renderContent()}</div>;
   };
 
   return (

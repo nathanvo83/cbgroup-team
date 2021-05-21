@@ -1,25 +1,17 @@
 .request {
   background: var(--main-note-bg-color);
-  padding: 20px;
   margin: 50px 0px;
+  padding: 20px;
 }
 
-.request .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-}
-
-.request .text {
+.request .request-text {
   text-align: center;
   font-family: var(--main-subtitle-font);
   font-size: var(--main-subtitle-size);
   font-weight: bolder;
 }
 
-.request .button {
-  margin: auto;
+.request .request-button {
+  /* margin: auto; */
   text-align: center;
 }

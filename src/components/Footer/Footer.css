@@ -8,30 +8,30 @@
   max-width: var(--main-content-width);
 }
 
-.footer-content .link {
+.footer-content .footer-link {
   text-decoration: none;
   color: var(--main-footer-link-color);
 }
 
-.footer-content .header {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: bold;
+.footer-content .footer-header {
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
   color: var(--main-footer-text-color);
+  text-transform: uppercase;
   padding: 30px 20px 20px 20px;
 }
 
-.footer-content .text {
-  padding: 5px 20px 5px 20px;
+.footer-content .footer-text {
+  padding: 3px 20px 0 20px;
 }
 
-.footer-content .icon {
+.footer-content .footer-icon {
   font-size: 20px;
   padding: 0px 5px 0px 0px;
 }
 
-.footer-content .row {
-  padding: 5px 20px 5px 20px;
+.footer-content .footer-row {
+  padding: 3px 20px 0px 20px;
 
   display: flex;
   flex-wrap: wrap;
