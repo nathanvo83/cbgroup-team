@@ -1,0 +1,30 @@
+.our-projects {
+  margin: 100px 0px;
+}
+
+.our-projects .project-title {
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.our-projects .project-subtitle {
+  font-family: var(--main-subtitle-font);
+  font-size: var(--main-subtitle-size);
+  color: var(--main-subtitle-color);
+  margin-bottom: 15px;
+}
+
+.our-projects .project-text {
+  text-align: left;
+}
+
+.our-projects .project-content {
+  padding: 0px 5px 30px 5px;
+}
+
+.our-projects .project-img {
+  text-align: center;
+  border: 1px dashed #000;
+}
