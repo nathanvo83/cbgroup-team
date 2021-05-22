@@ -6,10 +6,11 @@
   /* background: lightcoral; */
 }
 
-.partners-content .image {
+.partners-content .partner-image {
   margin-top: 20px;
   vertical-align: middle;
   width: 100%;
   border: 1px solid #000;
   /* padding: 10px; */
+  /* background: orange; */
 }

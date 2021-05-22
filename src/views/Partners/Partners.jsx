@@ -1,22 +1,21 @@
 import React from "react";
 import "./Partners.css";
-import carternz from "../../assets/images/Partners/carternz.png";
-import placemarkers from "../../assets/images/Partners/placemakers.jpg";
-import nzcb from "../../assets/images/Partners/NZCB.png";
-import engeo from "../../assets/images/Partners/engeo.png";
 import { Desktop, Mobile, Tablet } from "../../components/Responsive/Reponsive";
+
+import dulux from "../../assets/images/Partners/dulux.png";
+import kfc from "../../assets/images/Partners/kfc.png";
+import master_builder from "../../assets/images/Partners/master-builder.jpg";
+import remax from "../../assets/images/Partners/remax.PNG";
+import resene from "../../assets/images/Partners/Resene.png";
+import site_safe from "../../assets/images/Partners/Site-Safe.jpg";
 
 function Partners() {
   const renderCol1 = () => {
     return (
       <div>
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
-        <img className="image" src={engeo} alt="engeo" />
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img className="partner-image" src={dulux} alt="dulux" />
+        <img className="partner-image" src={remax} alt="remax" />
+        <img className="partner-image" src={site_safe} alt="site_safe" />
       </div>
     );
   };
@@ -24,13 +23,11 @@ function Partners() {
   const renderCol2 = () => {
     return (
       <div>
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
-        <img className="image" src={engeo} alt="engeo" />
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img
+          className="partner-image"
+          src={master_builder}
+          alt="master_builder"
+        />
       </div>
     );
   };
@@ -38,27 +35,8 @@ function Partners() {
   const renderCol3 = () => {
     return (
       <div>
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
-        <img className="image" src={engeo} alt="engeo" />
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
-      </div>
-    );
-  };
-
-  const renderCol4 = () => {
-    return (
-      <div>
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
-        <img className="image" src={engeo} alt="engeo" />
-        <img className="image" src={carternz} alt="carternz" />
-        <img className="image" src={nzcb} alt="nzcb" />
-        <img className="image" src={placemarkers} alt="placemarkers" />
+        <img className="partner-image" src={kfc} alt="kfc" />
+        <img className="partner-image" src={resene} alt="resene" />
       </div>
     );
   };
@@ -70,7 +48,6 @@ function Partners() {
           <div className="col-w1">{renderCol1()}</div>
           <div className="col-w1">{renderCol2()}</div>
           <div className="col-w1">{renderCol3()}</div>
-          <div className="col-w1">{renderCol4()}</div>
         </div>
       </div>
     );
@@ -83,7 +60,6 @@ function Partners() {
           <div className="col-w1">{renderCol1()}</div>
           <div className="col-w1">{renderCol2()}</div>
           <div className="col-w1">{renderCol3()}</div>
-          <div className="col-w1">{renderCol4()}</div>
         </div>
       </div>
     );
@@ -92,11 +68,10 @@ function Partners() {
   const renderDesktop = () => {
     return (
       <div className="partners-content">
-        <div className="grid4">
+        <div className="grid3">
           <div className="col-w1">{renderCol1()}</div>
           <div className="col-w1">{renderCol2()}</div>
           <div className="col-w1">{renderCol3()}</div>
-          <div className="col-w1">{renderCol4()}</div>
         </div>
       </div>
     );

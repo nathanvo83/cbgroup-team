@@ -1,10 +1,5 @@
 .contact-us {
-  text-align: left;
-}
-
-.contact-us .button-content {
-  display: flex;
-  flex-direction: row-reverse;
+  text-align: center;
 }
 
 .contact-us .row {
@@ -13,12 +8,34 @@
   align-items: center;
   margin-bottom: 10px;
 }
-.contact-us .row .icon {
-  font-size: var(--main-title-size);
-  color: var(--main-icon-color);
-  margin-right: 5px;
+
+.contact-us .contact-item {
+  text-align: center;
+  margin: 0 auto 40px;
 }
 
-.contact-us .row .text {
+.contact-us .contact-icon {
+  font-size: var(--main-header-size);
+  background: var(--main-icon-color);
+  color: var(--main-menu-text-color);
+
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.contact-us .contact-title {
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
+}
+
+.contact-us .contact-subtitle {
+  font-family: var(--main-subtitle-font);
+  font-size: var(--main-subtitle-size);
+
+  color: var(--main-header-color);
+  margin-top: 5px;
+}
+
+.contact-us .contact-text {
   /* color: #777; */
 }

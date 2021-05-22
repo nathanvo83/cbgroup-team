@@ -6,7 +6,12 @@ import NavItem from "./NavItem";
 const NavBar = () => {
   const renderMenu = () =>
     menuData.map((item) => (
-      <NavItem text={item.text} link={item.link} subs={item.subs}></NavItem>
+      <NavItem
+        key={item.text}
+        text={item.text}
+        link={item.link}
+        subs={item.subs}
+      ></NavItem>
     ));
 
   return (

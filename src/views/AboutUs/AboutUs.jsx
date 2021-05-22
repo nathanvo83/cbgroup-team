@@ -112,24 +112,21 @@ function AboutUs() {
     <div className="about-us">
       <div className="page-header">About Us</div>
       <div className="about-us-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias
-        eaque, ad dolore veniam provident. Itaque vel vitae corrupti. Aliquam
-        suscipit odit itaque debitis quos earum voluptas enim dolore numquam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        quaerat tempora recusandae voluptates eaque aspernatur mollitia sequi
-        iusto. Velit ipsam nulla perferendis totam ratione cum suscipit illo
-        ipsum dolorem iusto.
-      </div>
-      <div className="about-us-text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quas
-        laborum consequuntur! Minima facere ipsa obcaecati iure similique ex,
-        laudantium dolore quia rem voluptate laborum ea unde nisi ullam vel.
-      </div>
-      <div className="about-us-text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quidem
-        illum? Voluptatem alias possimus nihil unde dignissimos dolorum dolor
-        expedita dicta incidunt velit culpa assumenda quia, adipisci quo
-        temporibus voluptatum?
+        CB Group has completed countless renovations and home improvements in
+        Auckland. Our focus and determination are both solely centred around
+        you, the client. Your satisfaction is what makes us tick, and is the
+        driving force that helps us to create and renovate the most stunning
+        spaces.
+        <br />
+        With your vision and our expertise, you can be sure that your home
+        renovation will capture your heart.
+        <br />
+        If you are looking for home improvements in Aucklands areas, then House
+        Renovation London is your premier choice. Not only do we cover full
+        house renovations, house extensions and loft conversions, but we also
+        fit in brand new kitchens and bathrooms. We are also able to take on
+        smaller scale projects such as painting & decorating, tiling or
+        plastering.
       </div>
 
       <div className="page-header">Our team</div>

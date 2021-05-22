@@ -1,13 +1,14 @@
 import React from "react";
 import Gallery from "../components/Gallery/Gallery";
 import nzcb from "../../../assets/images/Partners/NZCB.png";
+import WhyChooseUs from "../../../components/WhyChooseUs/WhyChooseUs";
 
 const AlbanyProject = () => {
   const images = [
-    { img: nzcb, text: "xyz" },
-    { img: nzcb, text: "xyz" },
-    { img: nzcb, text: "xyz" },
-    { img: nzcb, text: "xyz" },
+    { img: nzcb, text: "1" },
+    { img: nzcb, text: "2" },
+    { img: nzcb, text: "3" },
+    { img: nzcb, text: "4" },
   ];
 
   return (
@@ -26,6 +27,7 @@ const AlbanyProject = () => {
       </div>
 
       <Gallery images={images}></Gallery>
+      <WhyChooseUs></WhyChooseUs>
     </div>
   );
 };

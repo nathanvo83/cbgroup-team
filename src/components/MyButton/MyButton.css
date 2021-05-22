@@ -1,0 +1,14 @@
+.my-button {
+  text-decoration: none;
+
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.my-button-text {
+  background: var(--main-menu-bg-color);
+  color: var(--main-menu-text-color);
+  font-size: 1.1rem;
+
+  padding: 10px 50px;
+}

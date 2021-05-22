@@ -23,7 +23,11 @@ const Gallery = ({ images }) => {
     return (
       <div className="grid1">
         {images.map((item) => {
-          return <div className="col-w1">{renderImage(item.img)}</div>;
+          return (
+            <div key={item.text} className="col-w1">
+              {renderImage(item.img)}
+            </div>
+          );
         })}
       </div>
     );
@@ -32,7 +36,11 @@ const Gallery = ({ images }) => {
     return (
       <div className="grid2">
         {images.map((item) => {
-          return <div className="col-w1">{renderImage(item.img)}</div>;
+          return (
+            <div key={item.text} className="col-w1">
+              {renderImage(item.img)}
+            </div>
+          );
         })}
       </div>
     );
@@ -41,7 +49,12 @@ const Gallery = ({ images }) => {
     return (
       <div className="grid2">
         {images.map((item) => {
-          return <div className="col-w1">{renderImage(item.img)}</div>;
+          return (
+            <div key={item.text} className="col-w1">
+              {/* {item.text} */}
+              {renderImage(item.img)}
+            </div>
+          );
         })}
       </div>
     );

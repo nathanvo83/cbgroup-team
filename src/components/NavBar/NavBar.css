@@ -12,6 +12,7 @@
 .navbar-link {
   color: var(--main-menu-text-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar-content {

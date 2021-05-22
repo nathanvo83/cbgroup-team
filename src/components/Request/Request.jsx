@@ -1,6 +1,8 @@
 import React from "react";
 import "./Request.css";
 import { Desktop, Mobile, Tablet } from "../Responsive/Reponsive";
+import MyButton from "../MyButton/MyButton";
+import * as ROUTERS from "../../constants/routes";
 
 const Request = ({ text }) => {
   const renderText = () => {
@@ -10,7 +12,10 @@ const Request = ({ text }) => {
   const renderButton = () => {
     return (
       <div className="request-button">
-        <input type="button" value="Request a planning session"></input>
+        <MyButton
+          link={ROUTERS.CONTACTUS}
+          text="Request a planning session"
+        ></MyButton>
       </div>
     );
   };

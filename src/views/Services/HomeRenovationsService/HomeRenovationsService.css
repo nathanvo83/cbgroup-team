@@ -1,5 +1,16 @@
 .renovation {
 }
 
+.renovation .renovation-title {
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
+  margin-bottom: 10px;
+}
+.renovation .renovation-subtitle {
+  font-family: var(--main-subtitle-font);
+  font-size: var(--main-subtitle-size);
+  color: var(--main-subtitle-color);
+  margin-bottom: 20px;
+}
 .renovation .renovation-text {
 }

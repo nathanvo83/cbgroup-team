@@ -9,7 +9,11 @@ const NavItem = ({ text, link, subs }) => {
     <div className="content">
       {subs !== undefined
         ? subs.map((sub) => (
-            <NavSubItem text={sub.text} link={sub.link}></NavSubItem>
+            <NavSubItem
+              key={sub.text}
+              text={sub.text}
+              link={sub.link}
+            ></NavSubItem>
           ))
         : ""}
     </div>
@@ -28,12 +32,12 @@ const NavItem = ({ text, link, subs }) => {
             </div>
           </Link>
         ) : (
-          <Link className="navbar-link">
+          <div className="navbar-link">
             <div className="item">
               <div className="text">{text}</div>
               {subs !== undefined ? <FaAngleDown /> : ""}
             </div>
-          </Link>
+          </div>
         )}
 
         {renderSubItem(subs)}
