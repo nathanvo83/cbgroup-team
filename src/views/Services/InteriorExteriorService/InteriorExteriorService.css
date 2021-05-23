@@ -10,10 +10,10 @@
   margin-bottom: 10px;
 }
 .in-ex .in-ex-subtitle {
-  font-family: var(--main-subtitle-font);
+  /* font-family: var(--main-subtitle-font);
   font-size: var(--main-subtitle-size);
   color: var(--main-subtitle-color);
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 .in-ex .in-ex-text {
 }
