@@ -4,6 +4,10 @@ import "react-animated-slider/build/horizontal.css";
 import "./slider-animations.css";
 import "./ImageGallary.css";
 
+import img03 from "../../assets/images/Projects/img03.jpg";
+import img04 from "../../assets/images/Projects/img04.jpg";
+import img01 from "../../assets/images/Projects/img01.jpg";
+
 const ImageGallary = () => {
   const content = [
     {
@@ -11,7 +15,8 @@ const ImageGallary = () => {
       description:
         "We turn ideas into remarkable spaces, no matter the project size or budget.",
       button: "Contact Us",
-      image: "https://i.imgur.com/ZXBtVw7.jpg",
+      image: img03,
+      // image: "https://i.imgur.com/ZXBtVw7.jpg",
       user: "Luan Gjokaj",
       userProfile: "https://i.imgur.com/JSW6mEk.png",
     },
@@ -20,7 +25,8 @@ const ImageGallary = () => {
       description:
         "We Design and Build Amazing Spaces That People Love To Live",
       button: "Contact Us",
-      image: "https://i.imgur.com/DCdBXcq.jpg",
+      image: img04,
+      // image: "https://i.imgur.com/DCdBXcq.jpg",
       user: "Erich Behrens",
       userProfile: "https://i.imgur.com/0Clfnu7.png",
     },
@@ -28,7 +34,8 @@ const ImageGallary = () => {
       title: "Kitchens & Bathrooms",
       description: "Concept to Creation - Perfect Form & Function",
       button: "Contact Us",
-      image: "https://i.imgur.com/DvmN8Hx.jpg",
+      image: img01,
+      // image: "https://i.imgur.com/DvmN8Hx.jpg",
       user: "Bruno Vizovskyy",
       userProfile: "https://i.imgur.com/4KeKvtH.png",
     },

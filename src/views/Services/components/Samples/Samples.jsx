@@ -13,7 +13,7 @@ const Samples = ({ samples }) => {
       <div className="sample-item">
         <div className="sample-title">{address}</div>
         <div className="sample-img">
-          <img src={image} alt="1" />
+          <img className="sample-img" src={image} alt="1" />
         </div>
         <div className="sample-text">{text}</div>
         <br />

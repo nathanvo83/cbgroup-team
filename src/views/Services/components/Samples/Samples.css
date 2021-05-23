@@ -10,7 +10,8 @@
 
 .samples .sample-img {
   text-align: center;
-  border: 1px dashed #000;
+  /* border: 1px dashed #000; */
+  width: 100%;
 }
 
 .samples .sample-title {

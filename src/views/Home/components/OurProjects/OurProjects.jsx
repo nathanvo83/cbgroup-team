@@ -5,8 +5,12 @@ import {
   Mobile,
   Tablet,
 } from "../../../../components/Responsive/Reponsive";
-import nzcb from "../../../../assets/images/Partners/NZCB.png";
 import Request from "../../../../components/Request/Request";
+
+import img01 from "../../../../assets/images/Projects/img01.jpg";
+import img02 from "../../../../assets/images/Projects/img02.jpg";
+import img03 from "../../../../assets/images/Projects/img03.jpg";
+import img04 from "../../../../assets/images/Projects/img04.jpg";
 
 const OurProjects = () => {
   const requestText =
@@ -16,7 +20,7 @@ const OurProjects = () => {
     return (
       <div className="project-content">
         <div className="project-img">
-          <img src={nzcb} alt="1" />
+          <img className="project-img" src={img01} alt="1" />
         </div>
         <br />
         <div className="project-title">New builds</div>
@@ -36,7 +40,7 @@ const OurProjects = () => {
     return (
       <div className="project-content">
         <div className="project-img">
-          <img src={nzcb} alt="1" />
+          <img className="project-img" src={img02} alt="1" />
         </div>
         <br />
         <div className="project-title">Home renovations</div>
@@ -55,7 +59,7 @@ const OurProjects = () => {
     return (
       <div className="project-content">
         <div className="project-img">
-          <img src={nzcb} alt="1" />
+          <img className="project-img" src={img03} alt="1" />
         </div>
         <br />
         <div className="project-title">Interior & Exterior</div>
@@ -74,7 +78,7 @@ const OurProjects = () => {
     return (
       <div className="project-content">
         <div className="project-img">
-          <img src={nzcb} alt="1" />
+          <img className="project-img" src={img04} alt="1" />
         </div>
         <br />
         <div className="project-title">Home renovations</div>

@@ -1,14 +1,18 @@
 import React from "react";
 import Gallery from "../components/Gallery/Gallery";
-import nzcb from "../../../assets/images/Partners/NZCB.png";
 import WhyChooseUs from "../../../components/WhyChooseUs/WhyChooseUs";
+
+import img07 from "../../../assets/images/Projects/img07.jpg";
+import img08 from "../../../assets/images/Projects/img08.jpg";
+import img09 from "../../../assets/images/Projects/img09.jpg";
+import img03 from "../../../assets/images/Projects/img03.jpg";
 
 const AlbanyProject = () => {
   const images = [
-    { img: nzcb, text: "1" },
-    { img: nzcb, text: "2" },
-    { img: nzcb, text: "3" },
-    { img: nzcb, text: "4" },
+    { img: img03, text: "1" },
+    { img: img07, text: "2" },
+    { img: img08, text: "3" },
+    { img: img09, text: "4" },
   ];
 
   return (

@@ -1,27 +1,30 @@
 import React from "react";
 import "./HomeRenovationsService.css";
 import Samples from "../components/Samples/Samples";
-import nzcb from "../../../assets/images/Partners/NZCB.png";
 import WhyChooseUs from "../../../components/WhyChooseUs/WhyChooseUs";
 import * as ROUTERS from "../../../constants/routes";
+
+import img2 from "../../../assets/images/Projects/img02.jpg";
+import img3 from "../../../assets/images/Projects/img03.jpg";
+import img4 from "../../../assets/images/Projects/img04.jpg";
 
 const HomeRenovationsService = () => {
   const samples = [
     {
       address: "Albany",
-      image: nzcb,
+      image: img2,
       text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam eaque nobis impedit ullam incidunt harum possimus minus odio, aut, officiis sequi reprehenderit expedita, delectus voluptates? Accusamus amet nihil mollitia!",
       link: ROUTERS.PROJECT_ALBANY,
     },
     {
       address: "Mission Bay",
-      image: nzcb,
+      image: img3,
       text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam eaque nobis impedit ullam incidunt harum possimus minus odio, aut, officiis sequi reprehenderit expedita, delectus voluptates? Accusamus amet nihil mollitia!",
       link: ROUTERS.PROJECT_MISSIONBAY,
     },
     {
       address: "Queen Street",
-      image: nzcb,
+      image: img4,
       text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquam eaque nobis impedit ullam incidunt harum possimus minus odio, aut, officiis sequi reprehenderit expedita, delectus voluptates? Accusamus amet nihil mollitia!",
       link: ROUTERS.PROJECT_QUEENSTREET,
     },

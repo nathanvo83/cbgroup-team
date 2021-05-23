@@ -26,5 +26,6 @@
 
 .our-projects .project-img {
   text-align: center;
-  border: 1px dashed #000;
+  /* border: 1px dashed #000; */
+  width: 100%;
 }

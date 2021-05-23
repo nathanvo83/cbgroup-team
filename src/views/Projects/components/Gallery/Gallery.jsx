@@ -14,7 +14,7 @@ const Gallery = ({ images }) => {
   const renderImage = (image) => {
     return (
       <div className="gallery-img">
-        <img src={image} alt="1" />
+        <img className="gallery-img" src={image} alt="1" />
       </div>
     );
   };
