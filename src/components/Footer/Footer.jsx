@@ -28,7 +28,7 @@ export const Footer = () => {
       <div>
         <div className="footer-header">Our projects</div>
         <Link className="footer-link" to={ROUTES.PROJECT_QUEENSTREET}>
-          <div className="footer-text">Queue Street</div>
+          <div className="footer-text">Queen Street</div>
         </Link>
         <Link className="footer-link" to={ROUTES.PROJECT_ALBANY}>
           <div className="footer-text">Albany</div>
