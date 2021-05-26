@@ -11,7 +11,6 @@ const MenuBar = () => {
     <div>
       <Mobile>
         <MobileBarL2R></MobileBarL2R>
-        {/* <MobileBarR2L></MobileBarR2L> */}
         {/* <MobileBarNoEffect></MobileBarNoEffect> */}
         {/* <MobileBar></MobileBar> */}
         {/* <BurgerBar></BurgerBar> */}
@@ -19,6 +18,7 @@ const MenuBar = () => {
 
       <Tablet>
         <MobileBarL2R></MobileBarL2R>
+        {/* <MobileBarNoEffect></MobileBarNoEffect> */}
 
         {/* <MobileBar></MobileBar> */}
         {/* <BurgerBar></BurgerBar> */}

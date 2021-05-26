@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MyGallery.css";
 
 import { Link } from "react-router-dom";
@@ -36,6 +36,12 @@ const MyGallery = () => {
 
   const [isStart, setIsStart] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsStart(true);
+    }, 2000);
+  }, []);
+
   return (
     <div className="igallery">
       <Carousel
@@ -45,16 +51,14 @@ const MyGallery = () => {
         showThumbs={false}
         infiniteLoop={true}
         showArrows={false}
-        interval={3500}
-        transitionTime={1500}
+        interval={5000}
+        transitionTime={2000}
         onChange={() => {
-          console.log("isStart -> false");
           setIsStart(false);
 
           setTimeout(() => {
-            console.log("isStart -> true");
             setIsStart(true);
-          }, 1000);
+          }, 2000);
         }}
       >
         {content.map((item) => {

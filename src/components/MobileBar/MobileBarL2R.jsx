@@ -20,13 +20,11 @@ const MobileBarL2R = () => {
   };
 
   const isSubItemOpenHandler = (text, subs) => {
-    console.log(`->> ${subs}`);
     if (subs !== undefined) {
       let temp = subs.map((sub) => {
         return (
-          <Link className="mobilebar-link" to={sub.link}>
+          <Link key={sub.text} className="mobilebar-link" to={sub.link}>
             <div
-              key={sub.text}
               className="mobilebar-subitem"
               onClick={() => isItemOpenHandler()}
             >
@@ -36,14 +34,11 @@ const MobileBarL2R = () => {
         );
       });
 
-      console.log(temp);
-
       setSubItemHeader(text);
       setSubItems(temp);
 
       setIsSubItemOpen(!isSubItemOpen);
     } else {
-      console.log(`else`);
       setIsSubItemOpen(false);
       setIsItemOpen(true);
     }
@@ -69,9 +64,8 @@ const MobileBarL2R = () => {
         <div className="mobilebar-item-content">
           {menuData.map((item) => {
             return item.subs !== undefined ? (
-              <Link className="mobilebar-link">
+              <div key={item.text} className="mobilebar-link">
                 <div
-                  key={item.text}
                   className="mobilebar-item"
                   onClick={() => isSubItemOpenHandler(item.text, item.subs)}
                 >
@@ -79,11 +73,10 @@ const MobileBarL2R = () => {
 
                   <div>{item.subs !== undefined ? <FaAngleRight /> : ""}</div>
                 </div>
-              </Link>
+              </div>
             ) : (
-              <Link className="mobilebar-link" to={item.link}>
+              <Link key={item.text} className="mobilebar-link" to={item.link}>
                 <div
-                  key={item.text}
                   className="mobilebar-item"
                   onClick={() => isItemOpenHandler()}
                 >
@@ -135,6 +128,8 @@ const MobileBarL2R = () => {
 
       <div className="mobilebar-header" onClick={() => isItemOpenHandler()}>
         <FaBars />
+        CBGROUP
+        <div></div>
       </div>
     </div>
   );
