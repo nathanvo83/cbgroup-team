@@ -34,11 +34,11 @@ const MyGallery = () => {
     },
   ];
 
-  const [isStart, setIsStart] = useState(false);
+  const [isStarted, setIsStarted] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsStart(true);
+      setIsStarted(true);
     }, 2000);
   }, []);
 
@@ -54,10 +54,10 @@ const MyGallery = () => {
         interval={5000}
         transitionTime={2000}
         onChange={() => {
-          setIsStart(false);
+          setIsStarted(false);
 
           setTimeout(() => {
-            setIsStart(true);
+            setIsStarted(true);
           }, 2000);
         }}
       >
@@ -75,14 +75,14 @@ const MyGallery = () => {
                 <div className="inner">
                   <div
                     className={
-                      isStart ? "igallery-title start" : "igallery-title"
+                      isStarted ? "igallery-title start" : "igallery-title"
                     }
                   >
                     {item.title}
                   </div>
                   <div
                     className={
-                      isStart
+                      isStarted
                         ? "igallery-description start"
                         : "igallery-description"
                     }
@@ -92,7 +92,7 @@ const MyGallery = () => {
                   <Link
                     to={ROUTERS.CONTACTUS}
                     className={
-                      isStart ? "igallery-button start" : "igallery-button"
+                      isStarted ? "igallery-button start" : "igallery-button"
                     }
                   >
                     {item.button}
