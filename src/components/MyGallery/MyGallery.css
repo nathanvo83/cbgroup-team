@@ -5,6 +5,7 @@
 
 .igallery .slider-content {
   height: calc(100vh - 220px);
+  min-height: 375px;
   color: #fff;
 }
 

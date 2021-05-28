@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./MobileBar.css";
 import { menuData } from "../../data/menu";
 import { FaBars, FaTimes, FaAngleRight } from "react-icons/fa";
@@ -10,23 +10,33 @@ const MobileBar = () => {
   const [subItems, setSubItems] = useState("");
   const [subItemHeader, setSubItemHeader] = useState("");
 
+  useEffect(() => {
+    // console.log("1");
+    document.body.style.overflow = "auto";
+    return () => {
+      // console.log("2");
+    };
+  }, []);
+
   const isItemOpenHandler = () => {
     if (isItemOpen) {
+      document.body.style.overflow = "auto";
       setIsSubItemOpen(false);
       setIsItemOpen(false);
     } else {
+      document.body.style.overflow = "hidden";
       setIsItemOpen(true);
     }
   };
 
   const isSubItemOpenHandler = (text, subs) => {
-    console.log(`->> ${subs}`);
+    console.log("subitem", subs);
+
     if (subs !== undefined) {
       let temp = subs.map((sub) => {
         return (
-          <Link className="mobilebar-link" to={sub.link}>
+          <Link key={sub.text} className="mobilebar-link" to={sub.link}>
             <div
-              key={sub.text}
               className="mobilebar-subitem"
               onClick={() => isItemOpenHandler()}
             >
@@ -36,14 +46,11 @@ const MobileBar = () => {
         );
       });
 
-      console.log(temp);
-
       setSubItemHeader(text);
       setSubItems(temp);
 
       setIsSubItemOpen(!isSubItemOpen);
     } else {
-      console.log(`else`);
       setIsSubItemOpen(false);
       setIsItemOpen(true);
     }
@@ -52,15 +59,7 @@ const MobileBar = () => {
   // ITEM
   const renderItem = () => {
     return (
-      <div
-        className={
-          isItemOpen
-            ? isSubItemOpen
-              ? "mobilebar-item-overlay subitem-open"
-              : "mobilebar-item-overlay open"
-            : "mobilebar-item-overlay close"
-        }
-      >
+      <div>
         <div className="mobilebar-header" onClick={() => isItemOpenHandler()}>
           <FaTimes />
           <div className="mobilebar-header-text">CBGROUP</div>
@@ -69,9 +68,8 @@ const MobileBar = () => {
         <div className="mobilebar-item-content">
           {menuData.map((item) => {
             return item.subs !== undefined ? (
-              <Link className="mobilebar-link">
+              <div key={item.text} className="mobilebar-link">
                 <div
-                  key={item.text}
                   className="mobilebar-item"
                   onClick={() => isSubItemOpenHandler(item.text, item.subs)}
                 >
@@ -79,11 +77,10 @@ const MobileBar = () => {
 
                   <div>{item.subs !== undefined ? <FaAngleRight /> : ""}</div>
                 </div>
-              </Link>
+              </div>
             ) : (
-              <Link className="mobilebar-link" to={item.link}>
+              <Link key={item.text} className="mobilebar-link" to={item.link}>
                 <div
-                  key={item.text}
                   className="mobilebar-item"
                   onClick={() => isItemOpenHandler()}
                 >
@@ -102,13 +99,7 @@ const MobileBar = () => {
   // SUBITEM
   const renderSubItem = () => {
     return (
-      <div
-        className={
-          isSubItemOpen
-            ? "mobilebar-subitem-overlay open"
-            : "mobilebar-subitem-overlay close"
-        }
-      >
+      <div>
         <div
           className="mobilebar-header"
           onClick={() => isSubItemOpenHandler()}
@@ -117,25 +108,61 @@ const MobileBar = () => {
           <div className="mobilebar-header-text">{subItemHeader}</div>
           <div></div>
         </div>
-        <div className="mobilebar-subitem-content">
-          {/* <div className="mobilebar-subitem">--{subItemHeader}--</div> */}
-          {subItems}
+        <div className="mobilebar-subitem-content">{subItems}</div>
+      </div>
+    );
+  };
+
+  // HEADER
+  const renderHeader = () => {
+    return (
+      <div className="mobilebar-header" onClick={() => isItemOpenHandler()}>
+        <FaBars />
+        CBGROUP
+        <div></div>
+      </div>
+    );
+  };
+
+  const renderMenu = () => {
+    return isItemOpen ? (
+      <div className="mobilebar-modal">
+        <div className="mobilebar-modal-scrollable">
+          <div className="mobilebar-modal-content">
+            {/* Item */}
+            {isSubItemOpen ? renderSubItem() : renderItem()}
+            {/* <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+              voluptatum officiis molestiae excepturi facilis, nemo iure
+              sapiente fugit amet deserunt illum voluptates earum. Sequi sit
+              tempora non quisquam! Distinctio, fuga.
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              consectetur, voluptatibus exercitationem quod iusto molestias nisi
+              officiis illo asperiores, ea atque quam ab at fuga! Est voluptatum
+              ex nesciunt! Eius.
+            </div> */}
+          </div>
         </div>
       </div>
+    ) : (
+      ""
     );
   };
 
   return (
     <div className="mobilebar">
       {/* SubItem */}
-      {renderSubItem()}
+      {/* {renderSubItem()} */}
 
       {/* Item */}
-      {renderItem()}
+      {/* {renderItem()} */}
 
-      <div className="mobilebar-header" onClick={() => isItemOpenHandler()}>
-        <FaBars />
-      </div>
+      {/* Header */}
+      {renderHeader()}
+
+      {renderMenu()}
     </div>
   );
 };
